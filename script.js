@@ -72,14 +72,12 @@ function myFunction() {
   }
    if (window.pageYOffset>=YsectionLife.offsetTop-300 && !showedSectionLife) 
   {
-    console.log("'i'm here");
     for (var i = 8; i < motivationImages.length; i++) {
     motivationImages[i].style.display="block";
     motivationImages[i].classList.add("transition-right-left");
     showedSectionLife=true;
 
     if(bodyWidth<=1100 && !showedFooter){
-      console.log(bodyWidth);
       showedFooter=true;
       for (var i = 0; i < YboxNavigate.length; i++) {
       YboxNavigate[i].style.display="block";
