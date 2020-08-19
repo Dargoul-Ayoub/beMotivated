@@ -424,7 +424,7 @@ footer{
   padding: 10px 0px;
 }
 /*----------------------------------------- Some test -----------------------------------------------*/
-accordion{
+.accordion{
 	display: none;
   background-color: white;
   color: #444;
