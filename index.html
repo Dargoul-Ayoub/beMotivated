@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Shoping website
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<div class="dropdown-menu">
+
+		<button id="btn_menu"><img src="images\list.png" id="img_menu"> </button>
+		<div class="dropdown-content-menu">
+			<ul class="list-block">
+				<li><a href="">Home</a></li>
+				<li><a href="">Motivation</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+
+			</ul>
+		</div>
+
+	</div>
+		<div class="box">
+			<h1 id="headerTitle">BeMotivated</h1>
+		 <div class="search">
+			<select  id="combobox">
+				    <option value="All Categories">All Categories</option>
+					<option value="sport">Sport Motivation</option>
+					<option value="study">Study Motivation</option>
+					<option value="life">Life Motivation</option>
+			</select>
+			<input id="input_search" type="text" name="Search" placeholder="what are you looking for ?">
+			<button id="btn_search"><img src="images\search.png" id="img_search"></button>
+		 </div>
+		</div>
+		<nav>
+			<ul class="list-border-bottom">
+				<li >
+					<a style="opacity: 1;border-bottom: 5px solid red" href="">Home</a></li>
+				<li >
+					<div class="dropdown">
+						<button id="btn-motivation" >
+							<a >Motivation</a>
+							<img style="width: 10px;height: 10px; margin-left: 5px; cursor: pointer;" src="images\expand.png">
+						</button>
+						<div class="dropdown-content">
+							<div id="img_motiv">
+							<img src="images\img0.jpg">
+							</div>
+							<div class="content">
+								<h2>Sport</h2>
+							<ul>
+								<li><a href="">Self-Confidence</a></li>
+								<li><a href="">Motivational music</a></li>
+								<li><a href="">Goal setting</a></li>
+								<li><a href="">Using extrinsic rewards</a></li>
+							</ul>
+							</div>
+							<div class="content">
+								<h2>Study</h2>
+									<ul>
+										<li><a href="">Take a Walk</a></li>
+										<li><a href="">Commit to a Single Task</a></li>
+										<li><a href="">Clear to Neutral</a></li>
+										<li><a href="">Build Self-Discipline</a></li>
+										<li><a href="">Optimize Your Environment</a></li>
+									</ul>
+							</div>
+							<div class="content">
+								<h2>Life</h2>
+								<ul>
+									<li><a href="">Understand your why</a></li>
+									<li><a href="">Stay focused</a></li>
+									<li><a href="">Get active</a></li>
+									<li><a href="">Freedom</a></li>
+									<li><a href="">Laughter</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li><a href="">Blog</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+</header>
+<section>
+	<div class="slidShow">
+		<div class="mySlides fade">
+			<img src="images\motiv2.jpg">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images\motiv3.jpg">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images\motiv1.jpg">
+		</div>
+		<a class="next">></a>
+		<a class="prev"><</a>
+		<div  class="class_dot">
+			<span class="dot"></span>
+		    <span class="dot"></span>
+		    <span class="dot"></span>
+		</div>
+	</div>
+		
+</section>
+<section class="section-container">
+<div class="container">
+	<div class="box_item">
+     <img class="img_item"src="images\img.png">
+     <h3>How to become a good developer</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut rhoncus arcu. Phasellus sit amet hendrerit lacus. Fusce mollis, justo sit amet aliquam vehicula, mauris ligula euismod mi, ac pharetra neque felis lobortis ex. Nunc condimentum lacus ac hendrerit pellentesque. Quisque varius erat nec nunc aliquet dapibus. Curabitur tortor velit, tristique efficitur dignissim nec, mattis ut ex. Mauris posuere nibh nec nulla dapibus convallis. Aenean vitae dictum leo. Quisque pretium vel sapien vitae sollicitudin. Donec blandit accumsan neque.</p>
+     <a href="#">Read Now</a>
+	</div>
+	<div class="box_item">
+     <img class="img_item"src="images\img5.jpg">
+     <h3>Learn from your mistakes</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut rhoncus arcu. Phasellus sit amet hendrerit lacus. Fusce mollis, justo sit amet aliquam vehicula, mauris ligula euismod mi, ac pharetra neque felis lobortis ex. Nunc condimentum lacus ac hendrerit pellentesque. Quisque varius erat nec nunc aliquet dapibus. Curabitur tortor velit, tristique efficitur dignissim nec, mattis ut ex. Mauris posuere nibh nec nulla dapibus convallis. Aenean vitae dictum leo. Quisque pretium vel sapien vitae sollicitudin. Donec blandit accumsan neque.</p>
+     <a  href="#">Read Now</a>
+	</div>
+	<div class="box_item">
+     <img class="img_item"src="images\img2.jpeg">
+     <h3>Make yourself the best friend to talk with</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut rhoncus arcu. Phasellus sit amet hendrerit lacus. Fusce mollis, justo sit amet aliquam vehicula, mauris ligula euismod mi, ac pharetra neque felis lobortis ex. Nunc condimentum lacus ac hendrerit pellentesque. Quisque varius erat nec nunc aliquet dapibus. Curabitur tortor velit, tristique efficitur dignissim nec, mattis ut ex. Mauris posuere nibh nec nulla dapibus convallis. Aenean vitae dictum leo. Quisque pretium vel sapien vitae sollicitudin. Donec blandit accumsan neque.</p>
+     <a  href="#">Read Now</a>
+	</div>
+	<div class="box_item">
+     <img class="img_item"src="images\img6.jpg">
+     <h3>Start building a portfolio of work</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut rhoncus arcu. Phasellus sit amet hendrerit lacus. Fusce mollis, justo sit amet aliquam vehicula, mauris ligula euismod mi, ac pharetra neque felis lobortis ex. Nunc condimentum lacus ac hendrerit pellentesque. Quisque varius erat nec nunc aliquet dapibus. Curabitur tortor velit, tristique efficitur dignissim nec, mattis ut ex. Mauris posuere nibh nec nulla dapibus convallis. Aenean vitae dictum leo. Quisque pretium vel sapien vitae sollicitudin. Donec blandit accumsan neque.</p>
+     <a  href="#">Read Now</a>
+	</div>
+	<div class="box_item">
+     <img class="img_item"src="images\don't.png">
+     <h3>Don't say is too late to start from zero again</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut rhoncus arcu. Phasellus sit amet hendrerit lacus. Fusce mollis, justo sit amet aliquam vehicula, mauris ligula euismod mi, ac pharetra neque felis lobortis ex. Nunc condimentum lacus ac hendrerit pellentesque. Quisque varius erat nec nunc aliquet dapibus. Curabitur tortor velit, tristique efficitur dignissim nec, mattis ut ex. Mauris posuere nibh nec nulla dapibus convallis. Aenean vitae dictum leo. Quisque pretium vel sapien vitae sollicitudin. Donec blandit accumsan neque.</p>
+     <a  href="#">Read Now</a>
+	</div>
+	<div class="box_item">
+     <img class="img_item"src="images\img7.png">
+     <h3>Give yourself the confidence</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut rhoncus arcu. Phasellus sit amet hendrerit lacus. Fusce mollis, justo sit amet aliquam vehicula, mauris ligula euismod mi, ac pharetra neque felis lobortis ex. Nunc condimentum lacus ac hendrerit pellentesque. Quisque varius erat nec nunc aliquet dapibus. Curabitur tortor velit, tristique efficitur dignissim nec, mattis ut ex. Mauris posuere nibh nec nulla dapibus convallis. Aenean vitae dictum leo. Quisque pretium vel sapien vitae sollicitudin. Donec blandit accumsan neque.</p>
+     <a href="#">Read Now</a>
+	</div>
+</div>
+</section>
+<section class="section-sport section-height">
+	<h2>#Sport</h2>
+	<div class="container-sport">
+		<div class="box-images box-position-bl">
+			<div class="box-width-height">
+		           <img class="img-width" src="images\sport2.jpg">
+		           <div class="overlay">
+                     <button href="" class="text btnSport">see the picture</button>
+                   </div>
+		    </div>
+		    <div class="box-width-height">
+		           <img class="img-width" src="images\sport3.jpg">
+		           <div class="overlay">
+                     <button href="" class="text btnSport">see the picture</button>
+                   </div>
+            </div>
+            <div class="box-width-height">
+		           <img class="img-width" src="images\sport4.jpg">
+		           <div class="overlay">
+                     <button href=""  class="text btnSport" >see the picture</button>
+                    </div>
+            </div>
+            <div class="box-width-height">
+		           <img class="img-width" src="images\sport5.jpg">
+		           <div class="overlay">
+                     <button href="" class="text btnSport">see the picture</button>
+                   </div>
+            </div>
+		</div>
+	</div>
+</section>
+
+<section class="section-study section-height">
+	<h2>#Study</h2>
+	<div class="container-study">
+		<div class="box-images box-position-br">
+			<div class="box-width-height">
+		           <img class="img-width" src="images\study5.jpg">
+		           <div class="overlay">
+                     <button href="" class="btnStudy text">see the picture</button>
+                   </div>
+		    </div>
+		    <div class="box-width-height">
+		           <img class="img-width" src="images\study2.jpg">
+		           <div class="overlay">
+                     <button href="" class="btnStudy text">see the picture</button>
+                   </div>
+            </div>
+            <div class="box-width-height">
+		           <img class="img-width" src="images\study3.png">
+		           <div class="overlay">
+                     <button href=""  class="text btnStudy" >see the picture</button>
+                    </div>
+            </div>
+            <div class="box-width-height">
+		           <img class="img-width" src="images\study4.jpg">
+		           <div class="overlay">
+                     <button href="" class="btnStudy text">see the picture</button>
+                   </div>
+            </div>
+		</div>
+	</div>
+</section>
+
+<section class="section-life section-height">
+	<h2>#Life</h2>
+	<div class="container-life">
+		<div class="box-images box-position-bl">
+			<div class="box-width-height" >
+		           <img class="img-width" src="images\life3.jpg">
+		           <div class="overlay">
+                     <button href="" class="btnLife text">see the picture</button>
+                   </div>
+		    </div>
+		    <div class="box-width-height">
+		           <img class="img-width" src="images\life1.jpg">
+		           <div class="overlay">
+                     <button href="" class="btnLife text">see the picture</button>
+                   </div>
+            </div>
+            <div class="box-width-height">
+		           <img class="img-width" src="images\life5.jpg">
+		           <div class="overlay">
+                     <button href=""  class="text btnLife" >see the picture</button>
+                    </div>
+            </div>
+            <div class="box-width-height">
+		           <img class="img-width" src="images\life4.jpg">
+		           <div class="overlay">
+                     <button href="" class="btnLife text">see the picture</button>
+                   </div>
+            </div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<hr style="width: 50%;font-weight: bold;font-size: 5em;">
+	<div class="flex">
+		<div class="box_navigat">
+			<h1 class="title-list">Navigate</h1>
+		<ul class="footer-lists">
+			<li><a href="">Home</a></li>
+			<li><a href="">Motivation</a></li>
+			<li><a href="">Blog</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+		</div>
+		<div class="box_navigat">
+			<h1 class="title-list">Motivation</h1>
+		<ul class="footer-lists">
+			<li><a href="">Sport</a></li>
+			<li><a href="">Study</a></li>
+			<li><a href="">Life</a></li>
+		</ul>
+		</div>
+		<div class="box_navigat">
+			<h1 class="title-list">Support</h1>
+		<ul class="footer-lists">
+			<li><a href="">Send us a message</a></li>
+			<li><a href="">Donate us</a></li>
+		</ul>
+		</div>
+	</div>
+
+<!------------------------------------------------------------------------------------->
+
+<button  class="accordion"><a href="#scroll-1">Navigate</a></button>
+<div class="panel">
+  <div class="box_navigat">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Motivation</a></li>
+			<li><a href="">Blog</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+  </div>
+</div>
+<!-- i made scrolls id because i want the panel scroll from its potistion to the top-->
+<button id="scroll-1" class="accordion"><a href="#scroll-2">Motivation</a></button>
+<div class="panel">
+ <div class="box_navigat">
+		<ul>
+			<li><a href="">Sport</a></li>
+			<li><a href="">Study</a></li>
+			<li><a href="">Life</a></li>
+		</ul>
+		</div>
+</div>
+
+<button id="scroll-2" class="accordion"><a href="#scroll-3">Support</a></button>
+<div class="panel">
+  	<div class="box_navigat">
+		<ul>
+			<li><a href="">Send us a message</a></li>
+			<li><a href="">Donate us</a></li>
+		</ul>
+		</div>
+</div>
+<!-- if i didn't make this button the panel it will not scroll to the top with different element-->
+<button id="scroll-3"></button>
+<div id="myAccounts">
+	<h5>powered by <strong>DarAyo</strong> with motivation</h3>
+	<a href="https://github.com/Dargoul-Ayoub" target="_blank">
+		<i class="fab fa-github-square"></i>
+	</a>
+	<a href="https://www.linkedin.com/in/ayoub-dargoul-574373a8/" target="_blank">
+		<i class="fab fa-linkedin"></i>
+	</a>
+	<a href="https://play.google.com/store/apps/developer?id=DARAYO" target="_blank">
+		<i class="fab fa-google-play"></i>
+	</a>
+</div>
+</footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://kit.fontawesome.com/4a3c796ee3.js" crossorigin="anonymous"></script>
+</html>
