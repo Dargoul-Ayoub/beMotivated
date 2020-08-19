@@ -1,10 +1,9 @@
 
 window.onscroll=function(){myFunction()};
-
 var navbar=document.querySelector('nav');
 var positionNav =navbar.offsetTop;
 var nbar=document.querySelector('.container');
-var positionnbar =nbar.offsetTop;
+var Ycontainer =nbar.offsetTop;
 var heightSection=nbar.offsetHeight;// i calculat the height of section
 nbar.style.height=heightSection+"px";//i give the height value to section befor make box_item none , so it will save the height 
 
@@ -17,6 +16,14 @@ var cont=document.querySelectorAll(".box_item");
 var motivationImages=document.querySelectorAll(".box-width-height");
 var YboxNavigate=document.querySelectorAll(".title-list");
 var YlistBoxN=document.querySelectorAll(".footer-lists");
+
+var bodyWidth=document.querySelector('body').offsetWidth;
+
+var showedContainer=false;
+var showedSectionLife=false;
+var showedSectionSport=false;
+var showedSectionStudy=false;
+var showedFooter=false;
 
 for (var i = 0; i < cont.length; i++) {
   cont[i].style.display="none";
@@ -31,50 +38,69 @@ for (var i = 0; i < YboxNavigate.length; i++) {
 var positionContainer =cont.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset >= positionNav) {
+   
+  if (window.pageYOffset >= Ycontainer) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
-  if(window.pageYOffset >= positionnbar+200){
+
+  if(window.pageYOffset >= Ycontainer+200 && !showedContainer){
     for (var i = 0; i < cont.length; i++) {
     cont[i].style.display="block";
     cont[i].classList.add("transition-bottom-top");
-  }
+    }
+    showedContainer=true;
   }
 
-  if (window.pageYOffset>=YsectionSport.offsetTop-100 ) 
+  if (window.pageYOffset>=YsectionSport.offsetTop-300 && !showedSectionSport ) 
   {
     for (var i = 0; i < motivationImages.length-8; i++) {
     motivationImages[i].style.display="block";
     motivationImages[i].classList.add("transition-right-left");
   }
+  showedSectionSport=true;
    
   }
-   if (window.pageYOffset>=YsectionStudy.offsetTop-100)  
+   if (window.pageYOffset>=YsectionStudy.offsetTop-300 && !showedSectionStudy)  
   {
     for (var i = 4; i < motivationImages.length-4; i++) {
     motivationImages[i].style.display="block";
     motivationImages[i].classList.add("transition-left-right");
   }
+  showedSectionStudy=true;
   }
-   if (window.pageYOffset>=YsectionLife.offsetTop-100) 
+   if (window.pageYOffset>=YsectionLife.offsetTop-300 && !showedSectionLife) 
   {
+    console.log("'i'm here");
     for (var i = 8; i < motivationImages.length; i++) {
     motivationImages[i].style.display="block";
     motivationImages[i].classList.add("transition-right-left");
+    showedSectionLife=true;
+
+    if(bodyWidth<=1100 && !showedFooter){
+      console.log(bodyWidth);
+      showedFooter=true;
+      for (var i = 0; i < YboxNavigate.length; i++) {
+      YboxNavigate[i].style.display="block";
+  YlistBoxN[i].style.display="block";
+    YboxNavigate[i].classList.add("transition-bottom-top");
+    YlistBoxN[i].classList.add("transition-bottom-top-late");
+       }
+    }
+
   }
-   
+
   }
-   if (window.pageYOffset>=Yfooter.offsetTop-150) 
+   if (window.pageYOffset>=Yfooter.offsetTop-300 && !showedFooter) 
   {
     for (var i = 0; i < YboxNavigate.length; i++) {
       YboxNavigate[i].style.display="block";
   YlistBoxN[i].style.display="block";
     YboxNavigate[i].classList.add("transition-bottom-top");
     YlistBoxN[i].classList.add("transition-bottom-top-late");
-  }
-   
+    showedFooter=false;
+  } 
   }
 }
 
