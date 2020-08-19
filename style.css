@@ -423,9 +423,8 @@ footer{
   margin: 0px;
   padding: 10px 0px;
 }
-/*----------------------------------------- Some test -----------------------------------------------*/
 .accordion{
-	display: none;
+display: none;
   background-color: white;
   color: #444;
   cursor: pointer;
@@ -439,6 +438,7 @@ font-size: 1.2em;
   transition: 0.4s;
   background-color: lightgray;
 }
+
 
 .panel{
 	display: none;
