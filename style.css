@@ -4,6 +4,9 @@ body{
 		font-family: arial, Helvetica, sans-serif;
 	background-color: white;
 }
+button{
+	outline: none;
+}
 #img_search,#img_menu{
 	width:30px;
 	height: 30px;
