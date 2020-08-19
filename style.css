@@ -15,7 +15,7 @@ header{
 }
 input{
 	font-size: 1em;
-	width: 400px;
+	width: auto;
 	outline: none;
 	padding: 15px;
 	font-weight: bold;
@@ -581,10 +581,10 @@ strong{
 
     }
 
-   input{
+/*    input{
     	width: 100px;
     	font-size: 10px;
-    }
+    } */
 
    .flex{
    	display: none;
