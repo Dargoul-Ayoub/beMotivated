@@ -441,7 +441,7 @@ footer{
 .accordion {
 margin: 0px; 
 padding:10px;
-display:block;
+display:none;
 color: red;
 font-size: 1.2em;
 }
