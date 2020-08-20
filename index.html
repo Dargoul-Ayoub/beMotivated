@@ -278,8 +278,9 @@
 	</div>
 
 <!------------------------------------------------------------------------------------->
-
-<button  class="accordion">Navigate</button>
+<!-- if i didn't add span element the class ::after it will not wotk , but i don't know why 
+ -->
+ <button  class="accordion">Navigate<span>+</span></button>
 <div class="panel">
   <div class="box_navigat">
 		<ul>
@@ -291,7 +292,8 @@
 		</ul>
   </div>
 </div>
-<button  class="accordion">Motivation</button>
+
+<button  class="accordion">Motivation <span></span></button>
 <div class="panel">
  <div class="box_navigat">
 		<ul>
@@ -302,16 +304,16 @@
 		</div>
 </div>
 
-<button  class="accordion">Support</button>
+<button  class="accordion">Support <span></span></button>
 <div class="panel">
   	<div class="box_navigat">
 		<ul>
 			<li><a href="">Send us a message</a></li>
 			<li><a href="">Donate us</a></li>
 		</ul>
-		</div>
+	</div>
 </div>
-<!-- if i didn't make this button the panel it will not scroll to the top with different element-->
+
 <div id="myAccounts">
 	<h5>powered by <strong>DarAyo</strong> with motivation</h3>
 	<a href="https://github.com/Dargoul-Ayoub" target="_blank">
